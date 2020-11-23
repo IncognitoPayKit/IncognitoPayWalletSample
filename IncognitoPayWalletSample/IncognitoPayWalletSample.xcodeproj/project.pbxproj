@@ -16,6 +16,8 @@
 		E1A70515256BC5B000DC9AAA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E1A70513256BC5B000DC9AAA /* LaunchScreen.storyboard */; };
 		E1A70520256BC5B000DC9AAA /* IncognitoPayWalletSampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1A7051F256BC5B000DC9AAA /* IncognitoPayWalletSampleTests.swift */; };
 		E1A7052B256BC5B000DC9AAA /* IncognitoPayWalletSampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1A7052A256BC5B000DC9AAA /* IncognitoPayWalletSampleUITests.swift */; };
+		E1A70551256BC97100DC9AAA /* IncognitoPayKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E1A70542256BC8CE00DC9AAA /* IncognitoPayKit.framework */; };
+		E1A70552256BC97100DC9AAA /* IncognitoPayKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E1A70542256BC8CE00DC9AAA /* IncognitoPayKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,7 +35,35 @@
 			remoteGlobalIDString = E1A70501256BC5AE00DC9AAA;
 			remoteInfo = IncognitoPayWalletSample;
 		};
+		E1A70541256BC8CE00DC9AAA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E1A7053C256BC8CE00DC9AAA /* IncognitoPayKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = E1A704D5256BB0F900DC9AAA;
+			remoteInfo = IncognitoPayKit;
+		};
+		E1A70543256BC8CE00DC9AAA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E1A7053C256BC8CE00DC9AAA /* IncognitoPayKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = E1A704DE256BB0F900DC9AAA;
+			remoteInfo = IncognitoPayKitTests;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		E1A70553256BC97100DC9AAA /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				E1A70552256BC97100DC9AAA /* IncognitoPayKit.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		E1A70502256BC5AE00DC9AAA /* IncognitoPayWalletSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IncognitoPayWalletSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -51,6 +81,7 @@
 		E1A70526256BC5B000DC9AAA /* IncognitoPayWalletSampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IncognitoPayWalletSampleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E1A7052A256BC5B000DC9AAA /* IncognitoPayWalletSampleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IncognitoPayWalletSampleUITests.swift; sourceTree = "<group>"; };
 		E1A7052C256BC5B000DC9AAA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E1A7053C256BC8CE00DC9AAA /* IncognitoPayKit.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = IncognitoPayKit.xcodeproj; path = ../../IncognitoPayKit/IncognitoPayKit/IncognitoPayKit.xcodeproj; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +89,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E1A70551256BC97100DC9AAA /* IncognitoPayKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,6 +117,7 @@
 				E1A7051E256BC5B000DC9AAA /* IncognitoPayWalletSampleTests */,
 				E1A70529256BC5B000DC9AAA /* IncognitoPayWalletSampleUITests */,
 				E1A70503256BC5AE00DC9AAA /* Products */,
+				E1A7053B256BC8CD00DC9AAA /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -131,6 +164,23 @@
 			path = IncognitoPayWalletSampleUITests;
 			sourceTree = "<group>";
 		};
+		E1A7053B256BC8CD00DC9AAA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E1A7053C256BC8CE00DC9AAA /* IncognitoPayKit.xcodeproj */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E1A7053D256BC8CE00DC9AAA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E1A70542256BC8CE00DC9AAA /* IncognitoPayKit.framework */,
+				E1A70544256BC8CE00DC9AAA /* IncognitoPayKitTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -141,6 +191,7 @@
 				E1A704FE256BC5AE00DC9AAA /* Sources */,
 				E1A704FF256BC5AE00DC9AAA /* Frameworks */,
 				E1A70500256BC5AE00DC9AAA /* Resources */,
+				E1A70553256BC97100DC9AAA /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -220,6 +271,12 @@
 			mainGroup = E1A704F9256BC5AE00DC9AAA;
 			productRefGroup = E1A70503256BC5AE00DC9AAA /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = E1A7053D256BC8CE00DC9AAA /* Products */;
+					ProjectRef = E1A7053C256BC8CE00DC9AAA /* IncognitoPayKit.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				E1A70501256BC5AE00DC9AAA /* IncognitoPayWalletSample */,
@@ -228,6 +285,23 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		E1A70542256BC8CE00DC9AAA /* IncognitoPayKit.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = IncognitoPayKit.framework;
+			remoteRef = E1A70541256BC8CE00DC9AAA /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		E1A70544256BC8CE00DC9AAA /* IncognitoPayKitTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = IncognitoPayKitTests.xctest;
+			remoteRef = E1A70543256BC8CE00DC9AAA /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		E1A70500256BC5AE00DC9AAA /* Resources */ = {
