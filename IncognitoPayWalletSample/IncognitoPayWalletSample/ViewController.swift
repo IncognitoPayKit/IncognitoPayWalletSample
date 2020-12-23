@@ -15,8 +15,11 @@ class ViewController: UIViewController {
     let incognitoPayButton = IncognitoPayButton(base: self)
     let button = UIView()
     button.addSubview(incognitoPayButton)
-    button.heightAnchor.constraint(equalToConstant: 50).isActive = true
-    button.widthAnchor.constraint(equalToConstant: 100).isActive = true
+    
+    NSLayoutConstraint.activate([
+      button.heightAnchor.constraint(equalToConstant: 50),
+      button.widthAnchor.constraint(equalToConstant: 100)
+    ])
     
     let stackView = UIStackView(arrangedSubviews: [
       button
@@ -27,7 +30,9 @@ class ViewController: UIViewController {
     
     view.addSubview(stackView)
     
-    stackView.centerYAnchor.constraint(equalTo: view.centerYAnchor).isActive = true
-    stackView.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
+    NSLayoutConstraint.activate([
+      stackView.centerYAnchor.constraint(equalTo: view.centerYAnchor),
+      stackView.centerXAnchor.constraint(equalTo: view.centerXAnchor)
+    ])
   }
 }
