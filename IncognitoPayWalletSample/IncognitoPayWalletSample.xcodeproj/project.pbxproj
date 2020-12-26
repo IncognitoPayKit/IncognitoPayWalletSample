@@ -7,8 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		E15E5494259625B300B1D5D8 /* Debug.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = E15E5491259625B300B1D5D8 /* Debug.xcconfig */; };
-		E15E5498259625B900B1D5D8 /* Release.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = E15E5497259625B900B1D5D8 /* Release.xcconfig */; };
 		E1A70506256BC5AE00DC9AAA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1A70505256BC5AE00DC9AAA /* AppDelegate.swift */; };
 		E1A70508256BC5AE00DC9AAA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1A70507256BC5AE00DC9AAA /* SceneDelegate.swift */; };
 		E1A7050A256BC5AE00DC9AAA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1A70509256BC5AE00DC9AAA /* ViewController.swift */; };
@@ -251,7 +249,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1220;
-				LastUpgradeCheck = 1220;
+				LastUpgradeCheck = 1230;
 				TargetAttributes = {
 					E1A70501256BC5AE00DC9AAA = {
 						CreatedOnToolsVersion = 12.2;
@@ -314,11 +312,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E15E5494259625B300B1D5D8 /* Debug.xcconfig in Resources */,
 				E1A70515256BC5B000DC9AAA /* LaunchScreen.storyboard in Resources */,
 				E1A70512256BC5B000DC9AAA /* Assets.xcassets in Resources */,
 				E1A7050D256BC5AE00DC9AAA /* Main.storyboard in Resources */,
-				E15E5498259625B900B1D5D8 /* Release.xcconfig in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
